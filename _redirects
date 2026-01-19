@@ -1,0 +1,9 @@
+# Cloudflare Pages 重定向配置
+
+# WordPress 后台重定向到源站
+# 注释说明: 如果WordPress在线上运行,取消注释下面两行
+# /wp-admin/* https://88.ai888.uk/wp-admin/:splat 301
+# /wp-login.php https://88.ai888.uk/wp-login.php 301
+
+# 404 错误页面
+/* /404.html 404

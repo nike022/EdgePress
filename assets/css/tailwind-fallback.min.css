@@ -1,0 +1,72 @@
+/* Tailwind CSS Fallback - 基础样式 */
+.text-primary { color: #3b5dce !important; }
+.bg-primary { background-color: #3b5dce !important; }
+.border-primary { border-color: #3b5dce !important; }
+.hover\:text-primary:hover { color: #3b5dce !important; }
+.hover\:bg-primary:hover { background-color: #3b5dce !important; }
+.hover\:border-primary:hover { border-color: #3b5dce !important; }
+.focus\:border-primary:focus { border-color: #3b5dce !important; }
+.focus\:outline-primary:focus { outline-color: #3b5dce !important; }
+
+/* 基础布局 */
+.container { max-width: 1200px; margin: 0 auto; padding: 0 1rem; }
+.mx-auto { margin-left: auto; margin-right: auto; }
+.my-8 { margin-top: 2rem; margin-bottom: 2rem; }
+.px-4 { padding-left: 1rem; padding-right: 1rem; }
+.py-6 { padding-top: 1.5rem; padding-bottom: 1.5rem; }
+
+/* 弹性布局 */
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.items-center { align-items: center; }
+.justify-center { justify-content: center; }
+.gap-2 { gap: 0.5rem; }
+.gap-3 { gap: 0.75rem; }
+
+/* 文本 */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-sm { font-size: 0.875rem; }
+.text-lg { font-size: 1.125rem; }
+.text-xl { font-size: 1.25rem; }
+.font-bold { font-weight: 700; }
+
+/* 颜色 */
+.text-gray-500 { color: #6b7280; }
+.text-gray-800 { color: #1f2937; }
+.text-gray-100 { color: #f3f4f6; }
+.bg-white { background-color: #ffffff; }
+.bg-gray-50 { background-color: #f9fafb; }
+
+/* 边框 */
+.border { border-width: 1px; }
+.border-dashed { border-style: dashed; }
+.rounded { border-radius: 0.25rem; }
+.rounded-lg { border-radius: 0.5rem; }
+
+/* 过渡效果 */
+.transition-colors { transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out; }
+
+/* 暗色模式 */
+.dark .text-gray-100 { color: #f3f4f6; }
+.dark .text-gray-400 { color: #9ca3af; }
+.dark .bg-gray-800 { background-color: #1f2937; }
+.dark .bg-gray-700 { background-color: #374151; }
+.dark .border-gray-600 { border-color: #4b5563; }
+.dark .border-gray-700 { border-color: #374151; }
+.dark .text-white { color: #ffffff; }
+
+/* 响应式 */
+@media (min-width: 640px) {
+    .sm\:text-left { text-align: left; }
+    .sm\:flex-row { flex-direction: row; }
+}
+
+@media (min-width: 768px) {
+    .md\:text-base { font-size: 1rem; }
+}
+
+/* 隐藏/显示 */
+.hidden { display: none; }
+.max-w-none { max-width: none; }
+.max-w-xs { max-width: 20rem; }

@@ -1,0 +1,52 @@
+# Cloudflare Pages 缓存策略配置
+# 安全头配置
+
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  X-XSS-Protection: 1; mode=block
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=()
+
+# CSS 文件 - 长期缓存
+/*.css
+  Cache-Control: public, max-age=31536000, immutable
+
+# JavaScript 文件 - 长期缓存
+/*.js
+/*.mjs
+  Cache-Control: public, max-age=31536000, immutable
+
+# 图片资源 - 长期缓存
+/*.jpg
+/*.jpeg
+/*.png
+/*.gif
+/*.webp
+/*.svg
+/*.ico
+  Cache-Control: public, max-age=31536000, immutable
+
+# 字体文件 - 长期缓存
+/*.woff
+/*.woff2
+/*.ttf
+/*.eot
+  Cache-Control: public, max-age=31536000, immutable
+
+# HTML 文件 - 不缓存，必须重新验证
+/*.html
+/
+  Cache-Control: public, max-age=0, must-revalidate
+
+# WordPress 上传文件 - 长期缓存
+/wp-content/uploads/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# 主题静态资源 - 长期缓存
+/wp-content/themes/less/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Pagefind 搜索索引 - 短期缓存
+/pagefind/*
+  Cache-Control: public, max-age=3600, must-revalidate

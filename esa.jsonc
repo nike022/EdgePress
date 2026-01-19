@@ -1,0 +1,6 @@
+{
+  "buildCommand": "npx pagefind --site .",
+  "assets": {
+    "directory": "."
+  }
+}
